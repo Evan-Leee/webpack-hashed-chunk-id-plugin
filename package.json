@@ -1,7 +1,7 @@
 {
   "name": "webpack-hashed-chunk-id-plugin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Designate hashed chunk path as the chunk id",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
