@@ -1,6 +1,6 @@
 {
   "name": "webpack-hashed-chunk-id-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Designate hashed chunk path as the chunk id",
   "main": "index.js",
   "scripts": {
