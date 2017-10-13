@@ -1,3 +1,8 @@
+[![npm][npm]][npm-url]  
+<a href="https://npmjs.com/package/webpack-hashed-chunk-id-plugin">
+	<img src="https://img.shields.io/npm/dm/webpack-hashed-chunk-id-plugin.svg">
+</a>
+
 # webpack-hashed-chunk-id-plugin
 
 Designate hashed chunk path as the chunk id
@@ -31,3 +36,8 @@ new hashedChunkIdPlugin({
 ## Author
 
 [daixinye](https://github.com/daixinye)
+
+
+[npm]: https://img.shields.io/npm/v/webpack-hashed-chunk-id-plugin.svg
+[npm-url]: https://npmjs.com/package/webpack-hashed-chunk-id-plugin
+[npm-download]: https://img.shields.io/npm/dm/webpack-hashed-chunk-id-plugin.svg
