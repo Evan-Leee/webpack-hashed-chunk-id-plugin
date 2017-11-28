@@ -1,5 +1,6 @@
 'use strict'
 const crypto = require('crypto')
+const _path = require('path')
 
 function hashedChunkIdsPlugin(options = {}) {
   this.options = Object.assign(
@@ -16,8 +17,12 @@ hashedChunkIdsPlugin.prototype.apply = function(compiler) {
     compilation.plugin('optimize-chunks', function(chunks) {
       const hashes = new Set()
       chunks.forEach(chunk => {
-        let path = chunk.entryModule ? chunk.entryModule.resource : chunk.name
+        let path =
+          (chunk.entryModule && chunk.entryModule.resource) ||
+          (chunk.entryModule && chunk.entryModule.name) ||
+          chunk.name
 
+        path = _path.relative('./', path)
         let hash = crypto
           .createHash('md5')
           .update(path)
